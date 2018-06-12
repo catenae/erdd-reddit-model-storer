@@ -1,2 +1,6 @@
 # erdd-reddit-model-storer
-TO-DO
+
+If Aerospike is running in the local host just run:
+```
+./store.sh
+```
