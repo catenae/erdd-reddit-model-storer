@@ -49,7 +49,7 @@ for k, v in objects_to_write.items():
   key = (aerospike_namespace, aerospike_set, k)
   try:
     client.put(key, {
-      'object_id': k,
+      'key': k,
       'value': v
     })
   except Exception as e:

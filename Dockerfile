@@ -26,12 +26,12 @@ RUN \
         /root/.cache/pip \
         /var/cache/apk/* \
     && find / -type d -name __pycache__ -exec rm -r {} \+
-    
+
 COPY \
     store.py \
     count_vectorizer \
     lr_model \
     tfidf_transformer /python-model/
-    
+
 WORKDIR python-model
 ENTRYPOINT ["python", "store.py"]
